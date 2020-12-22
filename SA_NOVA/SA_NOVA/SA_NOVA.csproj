@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAE21F94-B4C6-4714-B4C3-3137193AC049}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SA_NOVA</RootNamespace>
+    <AssemblyName>SA_NOVA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Cadastro\cadastroDeVeterinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cadastro\cadastroDeVeterinario.Designer.cs">
+      <DependentUpon>cadastroDeVeterinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cadastro\cadastroDeConsultasAvulso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cadastro\cadastroDeConsultasAvulso.Designer.cs">
+      <DependentUpon>cadastroDeConsultasAvulso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Consulta\acompanharConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Consulta\acompanharConsultas.Designer.cs">
+      <DependentUpon>acompanharConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cadastro\cadastroDeConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cadastro\cadastroDeConsultas.Designer.cs">
+      <DependentUpon>cadastroDeConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Consulta\acompanharAnimais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Consulta\acompanharAnimais.Designer.cs">
+      <DependentUpon>acompanharAnimais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Consulta\acompanharCadastros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Consulta\acompanharCadastros.Designer.cs">
+      <DependentUpon>acompanharCadastros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bdVeterinariaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdVeterinariaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cadastro\cadastroDeAnimais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cadastro\cadastroDeAnimais.Designer.cs">
+      <DependentUpon>cadastroDeAnimais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cadastro\cadastroDeCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cadastro\cadastroDeCliente.Designer.cs">
+      <DependentUpon>cadastroDeCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Conexao.cs" />
+    <Compile Include="Classes\Controle.cs" />
+    <Compile Include="Classes\Login.cs" />
+    <Compile Include="Forms\menusInicias\menuDeDecisao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\menusInicias\menuDeDecisao.Designer.cs">
+      <DependentUpon>menuDeDecisao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\menusInicias\menuDeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\menusInicias\menuDeLogin.Designer.cs">
+      <DependentUpon>menuDeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Cadastro\requererReceita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cadastro\requererReceita.Designer.cs">
+      <DependentUpon>requererReceita.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Cadastro\cadastroDeConsultasAvulso.resx">
+      <DependentUpon>cadastroDeConsultasAvulso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cadastro\cadastroDeVeterinario.resx">
+      <DependentUpon>cadastroDeVeterinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cadastro\requererReceita.resx">
+      <DependentUpon>requererReceita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Consulta\acompanharConsultas.resx">
+      <DependentUpon>acompanharConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Consulta\acompanharAnimais.resx">
+      <DependentUpon>acompanharAnimais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Consulta\acompanharCadastros.resx">
+      <DependentUpon>acompanharCadastros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cadastro\cadastroDeAnimais.resx">
+      <DependentUpon>cadastroDeAnimais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cadastro\cadastroDeCliente.resx">
+      <DependentUpon>cadastroDeCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cadastro\cadastroDeConsultas.resx">
+      <DependentUpon>cadastroDeConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\menusInicias\menuDeDecisao.resx">
+      <DependentUpon>menuDeDecisao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\menusInicias\menuDeLogin.resx">
+      <DependentUpon>menuDeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="bdVeterinariaDataSet.xsc">
+      <DependentUpon>bdVeterinariaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bdVeterinariaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdVeterinariaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdVeterinariaDataSet.xss">
+      <DependentUpon>bdVeterinariaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0157_h_bonnyville-veterinary-logo_13.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
